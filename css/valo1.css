@@ -71,7 +71,7 @@ body {
 } */
 .main_content form input {
   margin-top: 5em;
-  margin-left: 5em;
+  margin-left: 8em;
   height: 4rem;
   width: 60rem;
   border: none;
@@ -82,6 +82,7 @@ body {
   font-size: 2rem;
   color: white;
   padding-left: 20px;
+  
 }
 .main_content form input::placeholder {
   font-family: "Redressed", cursive;
@@ -101,7 +102,7 @@ body {
 }
 
 .next{
-  margin-left: 22em;
+  margin-left: 21em;
   width: 138px;
   height: 45px;
   top: 70px;
@@ -109,7 +110,7 @@ body {
 }
 
 .back{
-  margin-left: 6em;
+  margin-left: 10em;
   width: 138px;
   height: 45px;
   top: 70px;
@@ -118,23 +119,23 @@ body {
 
 
  
-/* .form2 {
-  top: 5px;
+.form2  {
+  bottom: 20px;
 } 
 .form3 {
-  top: 10px;
+  bottom: 20px;
 } 
 .form4 {
-  top: 15px;
+  bottom: 20px;
 } 
 .form5 {
-  top: 20px;
+  bottom: 20px;
 } 
 .form6 {
-  top: 25px;
+  bottom: 20px;
 } 
 .form7 {
-  top: 30px;  */
+  bottom: 20px;  
     /* this is to check whether all forms are there or not */
 
 

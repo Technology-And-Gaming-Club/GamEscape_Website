@@ -95,9 +95,12 @@ body {
   border: none;
   font-weight: 600;
   font-size: 30px;
+<<<<<<< HEAD
   cursor: pointer;
  
  
+=======
+>>>>>>> 0bb869607158c2bb0cce014874645d3100dfd5c8
 }
 
 .next{
@@ -136,3 +139,8 @@ body {
 .form7 {
   top: 30px;  */
     /* this is to check whether all forms are there or not */
+
+
+
+      
+}

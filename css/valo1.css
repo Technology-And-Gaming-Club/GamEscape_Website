@@ -93,11 +93,10 @@ body {
   border: none;
   font-weight: 600;
   font-size: 30px;
- 
 }
 
 .next{
-  left: 680px;
+  margin-left: 22em;
   width: 138px;
   height: 45px;
   top: 70px;
@@ -130,3 +129,8 @@ body {
 .form7 {
   top: 30px;  */
     /* this is to check whether all forms are there or not */
+
+
+
+      
+}

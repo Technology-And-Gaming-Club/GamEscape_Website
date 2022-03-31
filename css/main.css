@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap");
 body {
-  background-color: black;
+  background-color: #151515;
   color: white;
   font-family: 'Outfit';
   margin: 0;
@@ -53,7 +53,7 @@ body {
 }
 
 .hero {
-  text-align: center;
+  text-align: left;
 }
 
 .hero .heading {
@@ -93,17 +93,18 @@ body {
 }
 
 .buttons {
-  text-align: center;
+  text-align: left;
   margin-top: 40px;
 }
 
 .buttons ul {
+  margin-left: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack:leftr;
+          justify-content: left;
   gap: 10px;
 }
 

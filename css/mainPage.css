@@ -1,0 +1,372 @@
+body {
+    --show-valo: calc((80vw - 3140 * 100vh / 1024));
+    --main-page: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #03011bfa;
+
+    font-family: "Outfit", sans-serif;
+}
+
+#logo {
+}
+
+#ButtonContainer {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#valorantButtonContainer {
+    justify-self: flex-end;
+    display: none;
+    opacity: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+#csgoButtonContainer {
+    display: none;
+    opacity: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+
+#middleBackgroundImage {
+    position: absolute;
+    top: -15vh;
+    width: 101vw;
+    aspect-ratio: 1441/1024;
+}
+
+.joinButton {
+    margin: 5%;
+    margin-top: 0;
+    padding: 1%;
+    width: 25%;
+
+    background-color: #ebaa29;
+    /* background: linear-gradient(118.65deg, #e79723 0%, #efbf2f 100%); */
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px #efbf2f; */
+    transition-duration: 0.2s;
+}
+
+/* .joinButton:hover {
+    box-shadow: 2px 2px 20px #efbf2f;
+} */
+
+.valorant {
+    background-color: #bd3944;
+    color: #03011b;
+    border: solid 2px #bd3944;
+}
+
+.valorant:hover {
+    background-color: #bd394400;
+    color: #bd3944;
+}
+
+.CSGO {
+    background-color: #ebaa29;
+    color: #03011b;
+    border: solid 2px #ebaa29;
+}
+
+.CSGO:hover {
+    background-color: #ebaa2900;
+    color: #ebaa29;
+}
+
+#introText {
+    position: absoute;
+    width: 50%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    position: absolute;
+
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    z-index: 10;
+}
+
+#yellow {
+    color: #efbf2f;
+}
+
+#backgroundImage {
+    position: absolute;
+    top: 0;
+    left: var(--main-page);
+    aspect-ratio: 3140/1024;
+    height: 100vh;
+    z-index: 0;
+}
+
+#shaders {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    top: -50%;
+    left: -47%;
+
+    width: 200vw;
+    height: 200vh;
+    z-index: 0;
+
+    transform: rotate(-30deg);
+}
+
+.shade {
+    display: flex;
+    opacity: 0.7;
+    height: 200%;
+    width: 50%;
+    background-color: #000;
+    z-index: 100;
+    transition-duration: 0.5s;
+}
+
+.shade:hover {
+    opacity: 0;
+}
+
+@keyframes activateCSGO {
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes activateValorant {
+    to {
+        left: var(--show-valo);
+    }
+}
+
+@keyframes showForms {
+    to {
+        opacity: 1;
+    }
+}
+
+.gameEscapeButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    margin-right: 14%;
+    margin-left: -2%;
+    margin-bottom: 10%;
+}
+
+.gsLogo {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translate(-50%, -12.5%);
+    height: 150%;
+}
+
+.csLogo {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translate(-50%, -12.5%);
+    height: 150%;
+}
+
+#soloValo {
+    font-family: "Outfit", sans-serif;
+    border-radius: 100px 0px 0px 0px;
+    top: 25%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    right: 28%;
+}
+
+#teamValo {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 100px 0px 0px;
+    top: 25%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    left: 78%;
+}
+#infoValo {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 0px 0px 100px;
+    top: 75%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    right: 28%;
+}
+
+#homeValo {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 0px 100px 0px;
+
+    top: 75%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    left: 78%;
+}
+
+#soloCSGO {
+    font-family: "Outfit", sans-serif;
+    border-radius: 100px 0px 0px 0px;
+
+    top: 25%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    right: 63%;
+}
+
+#teamCSGO {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 100px 0px 0px;
+
+    top: 25%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    left: 43%;
+}
+#infoCSGO {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 0px 0px 100px;
+
+    top: 75%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    right: 63%;
+}
+
+#homeCSGO {
+    font-family: "Outfit", sans-serif;
+    border-radius: 0px 0px 100px 0px;
+
+    top: 75%;
+    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    left: 43%;
+}
+
+.logo {
+    height: 100%;
+    margin: 5%;
+}
+
+.tagLogo {
+    height: 37%;
+}
+
+#clubLogo {
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bd3944;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 0.5%;
+    height: 5%;
+    width: 10%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#clubLogoBackground {
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: linear-gradient(60deg, #ebaa29 50%, #bd3944 50%);
+}
+
+@keyframes gotoTop {
+    to {
+        top: 5%;
+        left: 81%;
+    }
+}
+
+@keyframes gocesgo {
+    to {
+        top: 5%;
+        left: 20%;
+    }
+}
+
+@keyframes colorValo {
+    to {
+        left: -150%;
+    }
+}
+
+@keyframes colorCSGO {
+    to {
+        left: 150%;
+    }
+}
+
+.ValorantBackgroundLogo {
+    width: 40%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+.CSGOBackgroundLogo {
+    width: 80%;
+    margin-right: 20%;
+    margin-bottom: -7%;
+}
+
+#portrait {
+    background-color: #ffffff;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    z-index: 100000;
+}

@@ -34,7 +34,7 @@ var CSGOShow = (event) => {
     document.getElementById("csgoButtonContainer").style.display = "flex";
     setInterval(() => {
         document.getElementById("csgoButtonContainer").style.animation =
-            "showForms 0.4s forwards";
+            "showForms 0.2s forwards";
     }, 200);
 
 
